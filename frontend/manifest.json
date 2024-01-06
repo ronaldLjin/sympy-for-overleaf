@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "name": "SymPy for Overleaf",
+  "description": "SymPy for Overleaf is a Chrome extension designed for evaluating LaTeX equations, built upon the SymPy Python package.",
+  "action": {
+    "default_popup": "js/index.html",
+    "default_title": "React Chrome Extension"
+  },
+  "commands": {
+    "apply-action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Applies the selected action to the highlighted equation."
+    }
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "permissions": ["tabs", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.overleaf.com/project/*"],
+      "js": ["js/content.js"]
+    }
+  ]
+}
