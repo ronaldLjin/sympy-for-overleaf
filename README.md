@@ -6,6 +6,10 @@ SymPy for Overleaf is an easy-to-use Chrome extension that can evaluate LaTeX ma
 
 This chrome extension allows users to easily evaluate highlighted LaTeX math expressions just by pressing "Ctrl + Shift + S" on their keyboard. Users can configure what SymPy operation they wan't to perform via a dropdown found in the extension pop-up. SymPy for Overleaf currently only supports the generic "solve" and "simplify" operations, but is easily scalable to support virtually any SymPy operation.
 
+The below video demonstrates what the extension does:
+
+https://github.com/ronaldLjin/sympy-for-overleaf/assets/76792674/bb52d5ff-4f96-42cd-aea9-85c4ffb93dbd
+
 ## Getting Started
 
 ### Dependencies
